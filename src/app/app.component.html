@@ -1,12 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
 <div style="text-align:center">
   <h1>
     Welcome to {{title}}!
   </h1>
- </div>
+    <hr/>
+</div>
 <h2>My first App. </h2>
 
-<input type="text" [(ngModel)] ="name">
+<input type="text" [(ngModel)]="name">
 
 <p>{{ name }}
 </p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      I am from the app component
+      <app-servers></app-servers>
+    </div>
+  </div>
+</div>
+
